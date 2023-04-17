@@ -6,6 +6,8 @@ import NewDetails from '../components/ui/NewDetails'
 import LineChart from '../components/ui/LineChart'
 import MapCard from '../components/ui/MapCard'
 import AssetsDetails from '../components/ui/AssetsDetails'
+import ImagesCard from '@/components/ui/ImagesCard'
+import TableCard from '@/components/ui/TableCard'
 
 export default function adminDashboard() {
   //admin details card
@@ -34,23 +36,40 @@ export default function adminDashboard() {
   const totalAssets= 13458;
   const assetsNum = 2870;
 
+  // Images card
+  const pendingAssets= '+13'
+
+  // Table 1 info:
+  const title= 'Most Searched Keywords (Global - Top5)'
+  const filter = 'Last month'
+
+
   return (
     <>
     <div className={styles.main}>
       <div>
         <AdminDetails name={name} role={role} assets={newAssets} date={date}/>
       </div>
-      <div className={styles.flexCards}>
+      <div className={styles.flexCardsRow}>
         <AccountDetails accounts={accounts} increased={increased} date={date2} />
         <NewDetails tasks={tasks} notifications={notifications} requests={requests} tasksOverdue={tasksOverdue} notificationsOverdue={notificationsOverdue} />
       </div>
       <div>
         <LineChart />
       </div>
-      <div className={styles.flexCards}>
+      <div className={styles.flexCardsRow}>
         <MapCard worldwideInc={worldwideInc} domInc={domInc} date={date2}/>
+        <div className={styles.flexCardsColumn}>
         <AssetsDetails assets={totalAssets} assetsNum={assetsNum}/>
+        <ImagesCard assets={pendingAssets}/>
+        </div>
       </div>
+
+      <div className={styles.flexCardsRow}>
+          <TableCard title={title} filter={filter}/>
+          <TableCard />
+      </div>
+
     </div>
     </>
   )

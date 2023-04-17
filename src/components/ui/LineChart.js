@@ -18,6 +18,8 @@ function LineChart() {
           borderColor: "#56B0CB",
           backgroundColor: "#7bb6dd",
           fill: false,
+          pointStyle: false,
+
         }, 
         ]
       },
