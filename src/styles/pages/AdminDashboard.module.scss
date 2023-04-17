@@ -1,12 +1,15 @@
 .main{
-    margin: 0 128px;
+    margin: 0 50px;
 }
 
-.flexCardsRow{
+.flexCards{
     display: flex;
+    justify-content: space-between;
+    gap:0 !important;
+
   }
 
-  .flexCardsColumn{
+.flexCardsColumn{
     display: flex;
     flex-direction: column;
   }

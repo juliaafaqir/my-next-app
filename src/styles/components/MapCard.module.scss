@@ -1,27 +1,31 @@
 .card{
-    width:50%;
-    height: 435px;
+    width: 48vw !important;
+    margin: 20px;
+    padding:20px;
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;
     color:#3C3C3C;
-    padding:20px;
-    align-items: center;
     box-shadow: 0px 10px 20px #00000033;
     border-radius: 5px;
     border-color: #ccc;
-    gap:20px;
 }
 
 .left{
+    width:60%;
     display: flex;
     flex-direction: column;
     align-items: left;
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+    }
     div{ 
         .title{
             font-size: 20px; 
-            color: #3C3C3C;
+            color: #242D3C;
             opacity: 1;
             font-weight: 600;
         }
@@ -44,7 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap:13px;
+    gap:3vh;   
     .top,.middle{
         .title{
             font-size: 48px; 
@@ -62,6 +66,11 @@
             font-size:14px;
             opacity: 0.7;
         }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap:1vh;
+        }
     }
     .bottom{
         .link{
@@ -69,12 +78,13 @@
                 text-decoration: none;
                 color: #009AAC;
                 font-size: 18px;
+                font-weight: 600;
             }
             a::after{
                 content:'';
                 display: block;
                 width: 50%;
-                border-bottom: 2px solid;
+                border-bottom: 3px solid;
             }
             a:hover::after{
                     width: 90%;

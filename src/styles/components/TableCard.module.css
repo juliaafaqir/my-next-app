@@ -1,15 +1,74 @@
 .card {
   width: 50%;
-  height: 435px;
+  padding-top: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  margin: 20px;
   font-family: "Open Sans", sans-serif;
   color: #3C3C3C;
-  padding: 20px;
+  margin: 20px;
   align-items: center;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   border-color: #ccc;
   gap: 20px;
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.card div h5 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0 20px;
+}
+.card div button {
+  width: 100px;
+  background-color: #F7F7F7;
+  border: none;
+  height: 21px;
+  margin: 20px;
+}
+
+.table {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.th,
+.td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+
+.th {
+  text-align: left;
+}
+
+.thead th {
+  background-color: #F7F7F7;
+}
+
+.tbody tr {
+  border-bottom: solid 1px #DDDDDD;
+}
+
+.tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbody td {
+  position: relative;
+}
+
+.tbody td:hover:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
 }/*# sourceMappingURL=TableCard.module.css.map */

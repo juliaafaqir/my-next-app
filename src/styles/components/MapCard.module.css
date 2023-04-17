@@ -1,27 +1,31 @@
 .card {
-  width: 50%;
-  height: 435px;
+  width: 48vw !important;
+  margin: 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  align-items: center;
   font-family: "Open Sans", sans-serif;
   color: #3C3C3C;
-  padding: 20px;
-  align-items: center;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   border-color: #ccc;
-  gap: 20px;
 }
 
 .left {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: left;
 }
+.left h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
 .left div .title {
   font-size: 20px;
-  color: #3C3C3C;
+  color: #242D3C;
   opacity: 1;
   font-weight: 600;
 }
@@ -42,7 +46,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  gap: 13px;
+  gap: 3vh;
 }
 .right .top .title, .right .middle .title {
   font-size: 48px;
@@ -60,16 +64,22 @@
   font-size: 14px;
   opacity: 0.7;
 }
+.right .top div, .right .middle div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
 .right .bottom .link a {
   text-decoration: none;
   color: #009AAC;
   font-size: 18px;
+  font-weight: 600;
 }
 .right .bottom .link a::after {
   content: "";
   display: block;
   width: 50%;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
 }
 .right .bottom .link a:hover::after {
   width: 90%;

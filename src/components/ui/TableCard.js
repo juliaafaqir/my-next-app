@@ -32,25 +32,25 @@ const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = use
             <h5>{props.title}</h5>
             <button>{props.filter}</button>
         </div>
-        <table {...getTableProps()}>
-            <thead>
+        <table className={styles.table} {...getTableProps()}>
+            <thead className={styles.thead}>
                 {headerGroups.map((headerGroup)=>(
                     <tr {...headerGroup.getHeaderGroupProps()}>
                         {headerGroup.headers.map((column) => (
-                            <th {...column.getHeaderProps()}>
+                            <th  className={styles.th} {...column.getHeaderProps()}>
                                 {column.render("Header")}
                             </th>
                             ))}
                     </tr>
                 ))}
             </thead>
-            <tbody {...getTableBodyProps()}>
+            <tbody className={styles.tbody} {...getTableBodyProps()}>
                 {rows.map((row) => {
                 prepareRow(row);
                 return (
                     <tr {...row.getRowProps()}>
                     {row.cells.map((cell) => (
-                        <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
+                        <td  className={styles.td} {...cell.getCellProps()}> {cell.render("Cell")} </td>
                     ))}
                     </tr>
                 );

@@ -1,5 +1,5 @@
 .card {
-  height: 90px;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   margin: 20px;
@@ -14,4 +14,20 @@
   color: #009AAC;
   font-size: 16px;
   font-weight: 600;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card div h2 {
+  font-weight: 400;
+  margin: 0;
+}
+.card div h5 {
+  font-weight: 400;
+  margin: 0;
+}
+.card div p {
+  font-size: 16px;
 }/*# sourceMappingURL=AdminDetails.module.css.map */

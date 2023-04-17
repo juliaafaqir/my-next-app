@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "@/styles/components/MapCard.module.css";
+import MapChart from "./MapChart"
 
 function MapCard(props) {
   return (
@@ -9,10 +10,10 @@ function MapCard(props) {
       <div className={styles.card}>
         <div className={styles.left}>
             <div>
-                <p className={styles.title}>Portal Usage</p>
+                <h2>Portal Usage</h2>
             </div>
             <div>
-                <img src="/assets/gray-map.png" alt="map image" />
+                <MapChart />
             </div>
         </div>
 
