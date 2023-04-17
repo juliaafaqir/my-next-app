@@ -9,4 +9,9 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   border-color: #ccc;
+}
+.card a {
+  color: #009AAC;
+  font-size: 16px;
+  font-weight: 600;
 }/*# sourceMappingURL=AdminDetails.module.css.map */
