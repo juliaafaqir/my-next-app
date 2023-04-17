@@ -1,0 +1,38 @@
+.card {
+  width: 50%;
+  height: 96px;
+  display: flex;
+  margin: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #3C3C3C;
+  padding: 20px;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-color: #ccc;
+  gap: 55px;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+}
+.left div .title,
+.right div .title {
+  font-size: 48px;
+  color: #009AAC;
+}
+.left div h5,
+.right div h5 {
+  margin: 0;
+  font-size: 16px;
+}
+.left div p,
+.right div p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.7;
+}/*# sourceMappingURL=AccountDetails.module.css.map */

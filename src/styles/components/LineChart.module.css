@@ -1,0 +1,13 @@
+.card {
+  height: 350px;
+  margin: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #3C3C3C;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.canvas {
+  height: 300px !important;
+}/*# sourceMappingURL=LineChart.module.css.map */
